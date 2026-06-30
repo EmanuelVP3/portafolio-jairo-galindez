@@ -1210,47 +1210,47 @@
     const d = collectData();
 
     const msg =
-`🏗️ *FORMULARIO DE PORTAFOLIO DIGITAL*
-📅 Fecha: ${new Date().toLocaleDateString('es-CO', {day:'2-digit', month:'long', year:'numeric'})}
+`*FORMULARIO DE PORTAFOLIO DIGITAL*
+Fecha: ${new Date().toLocaleDateString('es-CO', {day:'2-digit', month:'long', year:'numeric'})}
 
-━━━━━━━━━━━━━━━━━━━━━━
-🏢 *MÓDULO 1 — IDENTIDAD*
-━━━━━━━━━━━━━━━━━━━━━━
-📌 Nombre comercial: ${d.nombre}
-📌 Años de experiencia: ${d.experiencia}
-📌 Diferenciador: ${d.diferenciador}
+-----------------------------
+*MODULO 1 - IDENTIDAD*
+-----------------------------
+- Nombre comercial: ${d.nombre}
+- Anos de experiencia: ${d.experiencia}
+- Diferenciador: ${d.diferenciador}
 
-━━━━━━━━━━━━━━━━━━━━━━
-🔧 *MÓDULO 2 — SERVICIOS*
-━━━━━━━━━━━━━━━━━━━━━━
-✅ Plantas eléctricas: Instalación, mantenimiento, reparación, transferencia, repuestos, automatización.
-📌 Marcas: ${d.marcas}
-📌 Energía solar: ${d.solar}
-📌 Otros servicios: ${d.otrosServ}
+-----------------------------
+*MODULO 2 - SERVICIOS*
+-----------------------------
+- Plantas electricas: Instalacion, mantenimiento, reparacion, transferencia, repuestos, automatizacion.
+- Marcas: ${d.marcas}
+- Energia solar: ${d.solar}
+- Otros servicios: ${d.otrosServ}
 
-━━━━━━━━━━━━━━━━━━━━━━
-🏆 *MÓDULO 3 — PROYECTOS*
-━━━━━━━━━━━━━━━━━━━━━━
+-----------------------------
+*MODULO 3 - PROYECTOS*
+-----------------------------
 ${d.casos}
 
-━━━━━━━━━━━━━━━━━━━━━━
-📋 *MÓDULO 4 — CERTIFICACIONES*
-━━━━━━━━━━━━━━━━━━━━━━
+-----------------------------
+*MODULO 4 - CERTIFICACIONES*
+-----------------------------
 ${d.certs}
 
-━━━━━━━━━━━━━━━━━━━━━━
-📍 *MÓDULO 5 — CONTACTO*
-━━━━━━━━━━━━━━━━━━━━━━
-📱 WhatsApp: ${d.whatsapp}
-📧 Correo: ${d.correo}
-🗺️ Cobertura: ${d.cobertura}
+-----------------------------
+*MODULO 5 - CONTACTO*
+-----------------------------
+- WhatsApp: ${d.whatsapp}
+- Correo: ${d.correo}
+- Cobertura: ${d.cobertura}
 
-━━━━━━━━━━━━━━━━━━━━━━
-📸 *MÓDULO 6 — FOTOS*
-━━━━━━━━━━━━━━━━━━━━━━
+-----------------------------
+*MODULO 6 - FOTOS*
+-----------------------------
 ${d.fotos}
 
-_Formulario generado por Emanuel Velásquez Pino · EVP Dev_`;
+_Formulario por Emanuel Velasquez Pino - EVP Dev_`;
 
     const encoded = encodeURIComponent(msg);
     const waUrl   = `https://wa.me/${WA_NUMBER}?text=${encoded}`;
